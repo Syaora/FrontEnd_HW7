@@ -1,0 +1,21 @@
+<h1>Contact Page</h1>
+
+<div class="jumbotron text-center">
+  <h1>Contact Form</h1>
+  <br/><br/>
+
+  <div class="form-horizontal form-group form-group-lg row">
+    <div class="col-md-9 col-md-push-3">
+      {{input type="email" value=emailAddress class="form-control" placeholder="Please type your e-mail address." autofocus="autofocus"}}
+    </div>
+    <div class="col-md-3 col-md-pull-9">
+      {{input type="message" value=msg class="form-control" placeholder="Please enter a message"}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
+      <button {{action 'saveMessage'}} noMsg={{isEmpty}} disabled={{isDisabled}} class="btn btn-primary btn-lg btn-block">Send message</button>
+    </div>
+  </div>
+  <br/><br/>
+</div>
